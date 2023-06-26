@@ -17,3 +17,5 @@ function CustomButton(props){
             <Text className="text-center text-white">{ props.title }</Text>
         </TouchableOpacity>)
 }
+
+export default CustomButton;
