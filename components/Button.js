@@ -6,7 +6,7 @@ const className =
 
 
 
-function CustomButton(props){
+function Bu(props){
     return(
         <TouchableOpacity
         style = {props.style}
