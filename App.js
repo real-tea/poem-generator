@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import * as Clipboard from "expo-clipboard"
 import  Input from "./components/Input";
 import CustomButton from './components/Button';
@@ -100,6 +100,8 @@ export default function App() {
 
                 <LottieView
                   sorce={require("./assets/heart-loader.json")}
+                  autoPlay
+                  loop
                 />
 
               </View>
@@ -110,11 +112,27 @@ export default function App() {
         )}
 
       </Formik>
+    ) : (
+      <View className="flex">
+      <ScrollView>
+        <Text className="text-white">{poem}</Text>
+        </ScrollView>
+
+        <CustomButton
+        style={{
+          flexDirection : "row"
+        }}
+        onPress={reset}
+        title="Generate a new Poem"
+        >
+          <Ionicons name="md-bookmarks" size={20} color="white"/>
+        </CustomButton>
+      </View>
     )
 
     }
     </View>
-      
+      <StatusBar style="auto"/>
     </View>
   );
 }
