@@ -17,6 +17,7 @@
     "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-native": "0.71.8",
+    "react-native-dotenv": "^3.4.9",
     "tailwind": "^4.0.0",
     "yup": "^1.2.0"
   },
