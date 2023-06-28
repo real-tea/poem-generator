@@ -3,12 +3,16 @@ import { ScrollView, Text, View, StyleSheet } from "react-native";
 import { useState } from "react";
 import * as Clipboard from "expo-clipboard";
 import Input from "./components/Input";
-import CustomButton from "./components/Button";
+import CustomButton from "./components/CustomButton";
 import { Formik } from "formik";
 import { getPoem } from "./services/openai";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { requestValidationSchema } from "./schema/request";
 import LottieView from "lottie-react-native";
+import { AppRegistry, Platform } from 'react-native';
+
+AppRegistry.registerComponent('X', () => App);
+
 
 export default function App() {
   const [poem, setPoem] = useState("");

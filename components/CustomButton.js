@@ -6,7 +6,7 @@ const className =
 
 
 
-function Bu(props){
+export default function CustomButton(props){
     return(
         <TouchableOpacity
         style = {props.style}
@@ -18,4 +18,4 @@ function Bu(props){
         </TouchableOpacity>)
 }
 
-export default CustomButton;
+// export default CustomButton;
