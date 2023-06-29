@@ -39,7 +39,7 @@ export default function App() {
         Poem Generator 💞
       </Text>
       <Text className="text-sm font-bold italic text-center text-white">
-        Express your feelings to your loved ones!
+        by real-tea
       </Text>
       <View className="w-10/12">
         {!showPoem ? (
