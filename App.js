@@ -3,7 +3,7 @@ import { ScrollView, Text, View, StyleSheet } from "react-native";
 import { useState } from "react";
 import * as Clipboard from "expo-clipboard";
 import Input from "./components/Input";
-import CustomButton from "./components/CustomButton";
+import CustomButton from "./components/Button";
 import { Formik } from "formik";
 import { getPoem } from "./services/openai";
 import Ionicons from "@expo/vector-icons/Ionicons";
@@ -39,7 +39,7 @@ export default function App() {
         Poem Generator 💞
       </Text>
       <Text className="text-sm font-bold italic text-center text-white">
-        by real-tea
+        Express your feelings to your loved ones!
       </Text>
       <View className="w-10/12">
         {!showPoem ? (
